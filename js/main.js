@@ -39,17 +39,21 @@ const swiper = new Swiper('.swiper', {
 });
 
 // 모달창 띄우기 
-const modalBtn = document.querySelector('.project .btn-modal');
+const modalBtn = document.querySelectorAll('.project .btn-modal');
 const modalEl = document.querySelector('#modal');
 const closeBtn = document.querySelector('#modal .btn-close');
 const imageModalBtn = document.querySelectorAll('.project .btn-modal-image');
 const imageModalEl = document.querySelector('#imageModal');
 const imagecloseBtn = document.querySelector('#imageModal .btn-close');
 const imageEl =document.querySelector('#imageModal img');
-
-modalBtn.addEventListener('click',function(){
-  modalEl.style.display="flex";
+modalBtn.forEach(function(El){
+  El.addEventListener('click',function(){
+    modalEl.style.display="flex";
+  })
 })
+// modalBtn.addEventListener('click',function(){
+//   modalEl.style.display="flex";
+// })
 closeBtn.addEventListener('click',function(){
   modalEl.style.display="none";
 })
