@@ -265,13 +265,14 @@ header .btn-hamburger .material-symbols-outlined{
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  flex-wrap: wrap;
+  gap:30px;
 }
 
 .skill .skill_list > li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   /* 방법1:position */
   /* position: relative;
   top :100px; */
@@ -554,6 +555,49 @@ footer .copyright{
   header nav ul li a:hover{
     letter-spacing: 10px;
   }
+  .about{
+    padding:100px 0;
+  }
+  .about .about_wrapper{
+    flex-direction: column;
+    
+  }
+  .about .about_wrapper .about_img,
+  .about .about_wrapper .about_text
+  {
+    text-align: center;
+    width: 100%;
+  }
+
+  .skill{
+    padding:100px 0;
+  }
+  .project{
+    padding:100px 0;
+  }
+  .project .port{
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  .project .port .port_img,
+  .project .port .port_text{
+    width: 100%;}
+  .project .port .port_text{
+    padding:20px 0 0;
+  }
+  .contacet{
+    padding:100px 0;
+  }
+  #modal .modal-content,
+  #imageModal .modal-content{
+    width: 80%;
+  }
+
+  #imageModal .modal-body img{
+    width: 100%;
+  }
+
+
 
   
 }
