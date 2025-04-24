@@ -105,3 +105,19 @@ window.addEventListener('scroll',function(){
   }
   
 })
+
+// 모바일용 메뉴
+const btnHamburger= document.querySelector('.btn-hamburger');
+const navEl= document.querySelector('header nav');
+const aEl=document.querySelectorAll('nav ul li a');
+
+
+btnHamburger.addEventListener('click',function(){
+  navEl.classList.toggle('active');
+
+});
+aEl.forEach(function(El){
+  El.addEventListener('click',function(){  
+    navEl.classList.remove('active');
+  })
+});
